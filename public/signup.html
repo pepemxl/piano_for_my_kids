@@ -1,0 +1,30 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Piano for My Kids — Create account</title>
+  <link rel="stylesheet" href="/css/style.css" />
+</head>
+<body class="auth-page">
+  <main class="auth-card">
+    <h1>Create account</h1>
+    <p class="subtitle">Pick a username and password for your kid.</p>
+    <form id="signup-form">
+      <label>Display name
+        <input name="displayName" autocomplete="nickname" required />
+      </label>
+      <label>Username
+        <input name="username" autocomplete="username" required />
+      </label>
+      <label>Password (min 6 characters)
+        <input name="password" type="password" autocomplete="new-password" minlength="6" required />
+      </label>
+      <button type="submit">Create account</button>
+      <p class="error" id="error" hidden></p>
+    </form>
+    <p class="alt">Already have an account? <a href="/login.html">Sign in</a></p>
+  </main>
+  <script src="/js/auth.js"></script>
+</body>
+</html>

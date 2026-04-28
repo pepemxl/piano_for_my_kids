@@ -1,0 +1,43 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Piano for My Kids — Lesson</title>
+  <link rel="stylesheet" href="/css/style.css" />
+</head>
+<body>
+  <header class="topbar">
+    <h1><a href="/dashboard.html" class="back">←</a> <span id="lesson-title">Lesson</span></h1>
+    <nav>
+      <span id="midi-status" class="midi-status">MIDI: detecting…</span>
+      <button id="logout">Log out</button>
+    </nav>
+  </header>
+
+  <main class="lesson">
+    <section class="panel">
+      <div class="step-meta">
+        <span id="step-counter">Step 1 / 1</span>
+        <span id="score">Score: 0</span>
+      </div>
+      <p id="prompt" class="prompt">Loading lesson…</p>
+      <div class="step-controls">
+        <button id="play-target" type="button">▶ Hear it</button>
+        <button id="skip-step" type="button">Skip step</button>
+        <button id="restart" type="button">Restart lesson</button>
+      </div>
+      <p id="feedback" class="feedback"></p>
+    </section>
+
+    <section class="panel piano-wrap">
+      <div id="piano"></div>
+      <p class="hint">Click keys, use your computer keyboard (A S D F…), or play your connected MIDI piano.</p>
+    </section>
+  </main>
+
+  <script src="/js/piano.js"></script>
+  <script src="/js/midi.js"></script>
+  <script src="/js/lesson.js"></script>
+</body>
+</html>

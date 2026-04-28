@@ -1,0 +1,22 @@
+{
+  "name": "piano-for-my-kids",
+  "version": "0.1.0",
+  "description": "Web app to teach piano to kids, with MIDI support for Yamaha P-145.",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js",
+    "dev": "node --watch server.js",
+    "db:init": "node scripts/init-db.js"
+  },
+  "dependencies": {
+    "bcrypt": "^5.1.1",
+    "dotenv": "^16.4.5",
+    "express": "^4.19.2",
+    "express-mysql-session": "^3.0.3",
+    "express-session": "^1.18.0",
+    "mysql2": "^3.11.0"
+  },
+  "engines": {
+    "node": ">=18"
+  }
+}

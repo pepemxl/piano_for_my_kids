@@ -1,0 +1,39 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Piano for My Kids — Dashboard</title>
+  <link rel="stylesheet" href="/css/style.css" />
+</head>
+<body>
+  <header class="topbar">
+    <h1>Piano for My Kids</h1>
+    <nav>
+      <span id="welcome"></span>
+      <button id="logout">Log out</button>
+    </nav>
+  </header>
+
+  <main class="dashboard">
+    <section class="panel" id="summary-panel">
+      <h2>Your progress</h2>
+      <div class="stats" id="stats"></div>
+    </section>
+
+    <section class="panel" id="piano-panel">
+      <h2>Your piano</h2>
+      <p class="hint">The lessons will be tailored to this instrument's range.</p>
+      <select id="piano-select"></select>
+      <p class="piano-desc" id="piano-desc"></p>
+    </section>
+
+    <section class="panel" id="plan-panel">
+      <h2>Learning plan</h2>
+      <div id="modules"></div>
+    </section>
+  </main>
+
+  <script src="/js/dashboard.js"></script>
+</body>
+</html>
